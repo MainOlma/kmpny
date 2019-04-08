@@ -54,9 +54,22 @@ a {
     margin-top: 0em;
   }
 
+	#canvas-wrapper {
+		border-radius: 999px;
+		overflow: hidden;
+		width: 48px;
+		height: 48px;
+		margin-top: -4px;
+	}
+
   .introduction {
     margin-left: 18px;
     margin-top: -0.25em;
+		br {
+      @include until($tablet) {
+        display: none;
+      }
+		}
   }
 
   .left {
@@ -84,9 +97,9 @@ a {
     border: none;
     cursor: pointer;
     transition: all 0.1s ease;
-    @include until($desktop) {
-      margin-bottom: 40px;
-    }
+    //@include until($desktop) {
+      //margin-bottom: 80px;
+    //}
 
     div{margin-top: 10px}
 
