@@ -79,7 +79,7 @@ a {
   .right {
     margin-top: -0.25em;
     @include until($tablet) {
-      margin-left: 74px;
+      margin-left: 66px;
     }
   }
 }
