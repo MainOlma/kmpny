@@ -74,6 +74,9 @@ a {
 
   .left {
     display: flex;
+		#canvas-wrapper {
+			flex-shrink: 0
+		}
   }
 
   .right {
